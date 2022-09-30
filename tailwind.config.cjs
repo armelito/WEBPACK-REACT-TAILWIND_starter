@@ -10,8 +10,12 @@ module.exports =
   {
     fontFamily: 
     {
-      display: ['Open Sans', 'sans-serif'],
-      body: ['Open Sans', 'sans-serif'],
+      displayExtraBold: ['HelveticaNowDisplay-ExtraBold'],
+      displayBold: ['HelveticaNowDisplay-Bold'],
+      displayMedium: ['HelveticaNowDisplay-Medium'],
+      bodySemiBold: ['Mulish-SemiBold'],
+      bodyMedium: ['Mulish-Medium'],
+      bodyRegular: ['Mulish-Regular'],
     },
     extend: 
     {

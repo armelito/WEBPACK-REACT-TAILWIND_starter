@@ -3,8 +3,12 @@ const tailwindConfig = require("./tailwind.config.cjs" )
 
 module.exports =
 {
-  plugins: [
+  plugins: 
+  [
     'postcss-preset-env',
-    tailwindcss(tailwindConfig)
+    require('postcss-import'),
+    tailwindcss(tailwindConfig),
+    require('postcss-nesting'),
+    require('autoprefixer'),
   ],
 };

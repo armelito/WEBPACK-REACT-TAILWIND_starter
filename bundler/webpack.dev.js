@@ -9,7 +9,7 @@ export default {
   [
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
-      path: path.resolve(__dirname, './.env.development'),
+      path: path.resolve(__dirname, '..', '..', './.env.development'),
     }),
   ],
   devServer: 
