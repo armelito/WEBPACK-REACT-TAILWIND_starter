@@ -3,7 +3,9 @@ import React from 'react'
 const App = () => 
 {
   return (
-    <h1 className='font-bodyMedium underline text-3xl'>Vision Dashboard</h1>
+    <div>
+      <h1 className='title'>Vision Dashboard</h1>
+    </div>
   )
 }
 

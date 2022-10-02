@@ -18,7 +18,109 @@ module.exports =
       bodyRegular: ['Mulish-Regular'],
     },
     extend: 
-    {
+    {               
+      colors: 
+      {
+        background:
+        {
+          light: '#F7F7FE',
+          dark: '#27283F',
+        },
+        grey: 
+        {
+          '100': '#14141F',
+          '90': '#27283F',
+          '80': '#3A3C5F',
+          '70': '#4E507F',
+          '60': '#61649E',
+          '50': '#7D80B5',
+          '40': '#9EA0C7',
+          '30': '#BABCDE',
+          '20': '#D9DEF2',
+          '10': '#FFFFFF',
+        },
+        primary: 
+        {
+          'darker': '#27283F',
+          'dark': '#31368C',
+          'default': '#3E47FA',
+          'light': '#7A80FA',
+          'disable': '#C2C5FF',
+          'lighter': '#E0E2FF',
+        },  
+        secondary: 
+        {
+          'darker': '#E57162',
+          'dark': '#FE7E6D',
+          'default': '#FFA69A',
+          'light': '#FDD7CB',
+          'disable': '#FFF1EA',
+          'lighter': '#FFFAF7',
+        },
+        accent:
+        { 
+          purple:
+          {
+            'default': '#775FFC',
+            'light': '#A89AFF',
+            'ligther': '#E7E8FF',
+          },
+          sky:
+          {
+            'default': '#00DEE7',
+            'light': '#A1FCFF',
+            'ligther': '#E5FEFF',
+          },
+          green:
+          {
+            'default': '#70DF9E',
+            'light': '#A5E7C0',
+            'ligther': '#ECFFF4',
+          },
+          yellow:
+          {
+            'default': '#FFCC77',
+            'light': '#FFDDA5',
+            'ligther': '#FFFDEA',
+          },
+          orange:
+          {
+            'default': '#FE7E6D',
+            'light': '#FFA69A',
+            'ligther': '#FFEFE7',
+          },
+          red:
+          {
+            'default': '#FE6470',
+            'light': '#FF9AA2',
+            'ligther': '#FFE0E2',
+          },
+        },
+        success:
+        {
+          'default': '#2B4C4C',
+          'default': '#39D98A',
+          'disable': '#86F1BC',
+          'light': '#C8FFE3',
+          'lighter': '#E9FFF4',
+        },
+        warning:
+        {
+          'default': '#3D2F41',
+          'default': '#FF6161',
+          'disable': '#FF8D8D',
+          'light': '#FFC7C7',
+          'lighter': '#FFF2F2',
+        },
+        error:
+        {
+          'default': '#413D2F',
+          'default': '#FFC961',
+          'disable': '#FFD688',
+          'light': '#FFE7BB7',
+          'lighter': '#FFF7E9',
+        },
+      },
       fontSize: 
       {
         14: '14px',
