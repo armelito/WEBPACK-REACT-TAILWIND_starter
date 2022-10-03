@@ -1,0 +1,12 @@
+.btn
+{
+  @apply bg-primary-default;
+}
+
+/*@layer components
+{
+  .btn
+  {
+    @apply bg-primary-default;
+  }
+}*/

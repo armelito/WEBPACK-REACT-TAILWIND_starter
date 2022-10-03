@@ -1,14 +1,17 @@
 const tailwindcss = require('tailwindcss')
 const tailwindConfig = require("./tailwind.config.cjs" )
+const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports =
 {
   plugins: 
   [
-    'postcss-preset-env',
     require('postcss-import'),
     tailwindcss(tailwindConfig),
-    require('postcss-nesting'),
+    require('tailwindcss/nesting')(require('postcss-nesting')),
     require('autoprefixer'),
+    postcssPresetEnv({
+      features: { 'nesting-rules': false },
+    }),
   ],
 };

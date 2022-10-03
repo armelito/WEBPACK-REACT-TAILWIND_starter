@@ -1,3 +1,29 @@
-.title{
-  @apply text-primary-default;
+h1
+{
+  @apply font-displayExtraBold text-dark-1 text-h1 leading-h1 tracking-h1;
+}
+
+h2
+{
+  @apply font-displayExtraBold text-dark-2 text-h2 leading-h2 tracking-h2;
+}
+
+h3
+{
+  @apply font-displayExtraBold text-dark-2 text-h3 leading-h3 tracking-h3;
+}
+
+h4
+{
+  @apply font-displayExtraBold text-dark-2 text-h4 leading-h4 tracking-h4;
+}
+
+h5
+{
+  @apply font-displayBold text-dark-3 text-h5 leading-h5 tracking-h5;
+}
+
+h6
+{
+  @apply font-displayBold text-dark-3 text-h6 leading-h6 tracking-h6;
 }

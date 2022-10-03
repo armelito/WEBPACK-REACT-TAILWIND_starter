@@ -1,3 +1,4 @@
-.title{
-  @apply text-primary-default;
-}
+@layer utilities
+{
+  @import './utilities/hover.css';
+}; 

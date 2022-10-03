@@ -1,11 +1,10 @@
 @import "tailwindcss/base";
-@import "./base/index.css";
-
+@import './base/index.css';
 @import "tailwindcss/components";
-@import "./components/index.css";
-
+@import './components/index.css';
+@import './vendors/index.css';
 @import "tailwindcss/utilities";
-@import "./utilities/index.css";
+@import './utilities/index.css';
 
 @font-face
 {
