@@ -2,7 +2,6 @@ import path from 'path'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-//import CopyPlugin from 'copy-webpack-plugin'
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin'
 import TerserPlugin from 'terser-webpack-plugin'
 
@@ -71,14 +70,6 @@ export const commonConfig =
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    /*new CopyPlugin({
-      patterns: [
-        {
-          from: './src/shared',
-          to: '',
-        },
-      ],
-    })*/
   ],
   output: 
   {
