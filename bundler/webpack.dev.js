@@ -14,7 +14,6 @@ export default {
   ],
   devServer: 
   {
-    static: path.resolve(__dirname, './public'),
     hot: true,
     liveReload: true,
   },

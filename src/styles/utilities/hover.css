@@ -1,4 +1,7 @@
-.--hover
+@layer utilities
 {
-  @apply scale-100;
+  .--hover
+  {
+    @apply scale-100;
+  }
 }

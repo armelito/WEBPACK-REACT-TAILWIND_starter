@@ -1,12 +1,12 @@
-.btn
-{
-  @apply bg-primary-default;
-}
-
-/*@layer components
+@layer components
 {
   .btn
   {
-    @apply bg-primary-default;
+    @apply bg-primary-default w-10 h-6;
+
+    & > .btn-child
+    {
+      @apply text-secondary-darker;
+    }
   }
-}*/
+}

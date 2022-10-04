@@ -1,4 +1,1 @@
-@layer utilities
-{
-  @import './utilities/hover.css';
-}; 
+@import './hover.css';

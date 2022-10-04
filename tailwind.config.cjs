@@ -362,7 +362,7 @@ module.exports =
       '1000': '1000ms',
     },
     extend: 
-    {  
+    {
       fontSize: 
       {
         'h1': '3.75rem',
@@ -630,4 +630,8 @@ module.exports =
   [
     require('flowbite/plugin')
   ],
+  corePlugins: 
+  {
+    preflight: false,
+  }
 }

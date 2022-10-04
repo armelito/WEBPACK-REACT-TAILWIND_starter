@@ -1,29 +1,124 @@
-h1
+@layer base
 {
-  @apply font-displayExtraBold text-dark-1 text-h1 leading-h1 tracking-h1;
-}
+  h1
+  {
+    @apply font-displayExtraBold text-dark-1 text-h1 leading-h1 tracking-h1;
+  }
 
-h2
-{
-  @apply font-displayExtraBold text-dark-2 text-h2 leading-h2 tracking-h2;
-}
+  h2
+  {
+    @apply font-displayExtraBold text-dark-2 text-h2 leading-h2 tracking-h2;
+  }
 
-h3
-{
-  @apply font-displayExtraBold text-dark-2 text-h3 leading-h3 tracking-h3;
-}
+  h3
+  {
+    @apply font-displayExtraBold text-dark-2 text-h3 leading-h3 tracking-h3;
+  }
 
-h4
-{
-  @apply font-displayExtraBold text-dark-2 text-h4 leading-h4 tracking-h4;
-}
+  h4
+  {
+    @apply font-displayExtraBold text-dark-2 text-h4 leading-h4 tracking-h4;
+  }
 
-h5
-{
-  @apply font-displayBold text-dark-3 text-h5 leading-h5 tracking-h5;
-}
+  h5
+  {
+    @apply font-displayBold text-dark-3 text-h5 leading-h5 tracking-h5;
+  }
 
-h6
+  h6
+  {
+    @apply font-displayBold text-dark-3 text-h6 leading-h6 tracking-h6;
+  }
+
+  .armel
+  {
+    &-large
+    {
+      @apply font-bodyRegular text-dark-4 text-18 leading-body-large tracking-body-large;
+    }
+
+    &-default
+    {
+      @apply font-bodyRegular text-dark-4 text-16 leading-body tracking-body;
+    }
+
+    &-small
+    {
+      @apply font-bodyRegular text-dark-4 text-14 leading-body tracking-body-small;
+    }
+  }
+
+  @font-face
+  {
+    font-family: "HelveticaNowDisplay-ExtraBold";
+    src: url("../shared/fonts/HelveticaNowDisplay-ExtraBold.woff2");
+    font-weight: 900;
+  }
+
+  @font-face
+  {
+    font-family: "HelveticaNowDisplay-Bold";
+    src: url("../shared/fonts/HelveticaNowDisplay-Bold.woff2");
+    font-weight: 700;
+  }
+
+  @font-face
+  {
+    font-family: "HelveticaNowDisplay-Medium";
+    src: url("../shared/fonts/HelveticaNowDisplay-Medium.woff2");
+    font-weight: 600;
+  }
+
+  @font-face
+  {
+    font-family: "HelveticaNowDisplay-Regular";
+    src: url("../shared/fonts/HelveticaNowDisplay-Regular.woff2");
+    font-weight: 400;
+  }
+
+
+  @font-face
+  {
+    font-family: "Mulish-ExtraBold";
+    src: url("../shared/fonts/Mulish-ExtraBold.woff2");
+    font-weight: 900;
+  }
+
+  @font-face
+  {
+    font-family: "Mulish-Bold";
+    src: url("../shared/fonts/Mulish-Bold.woff2");
+    font-weight: 700;
+  }
+
+  @font-face
+  {
+    font-family: "Mulish-SemiBold";
+    src: url("../shared/fonts/Mulish-SemiBold.woff2");
+    font-weight: 600;
+  }
+
+  @font-face
+  {
+    font-family: "Mulish-Medium";
+    src: url("../shared/fonts/Mulish-Medium.woff2");
+    font-weight: 500;
+  }
+
+  @font-face
+  {
+    font-family: "Mulish-Regular";
+    src: url("../shared/fonts/Mulish-Regular.woff2");
+    font-weight: 700;
+  }
+} 
+
+.armel
 {
-  @apply font-displayBold text-dark-3 text-h6 leading-h6 tracking-h6;
+  width: 299px;
+
+  & > .armel.cantin
+  {
+    color: red;
+  }
 }

@@ -1,6 +1,2 @@
-@layer base 
-{
-  @import './base/reset.css';
-  @import './base/font.css';
-  @import './base/base.css';
-}
+@import './base.css';
+@import './font.css';
