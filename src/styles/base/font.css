@@ -30,24 +30,6 @@
     @apply font-displayBold text-dark-3 text-h6 leading-h6 tracking-h6;
   }
 
-  .armel
-  {
-    &-large
-    {
-      @apply font-bodyRegular text-dark-4 text-18 leading-body-large tracking-body-large;
-    }
-
-    &-default
-    {
-      @apply font-bodyRegular text-dark-4 text-16 leading-body tracking-body;
-    }
-
-    &-small
-    {
-      @apply font-bodyRegular text-dark-4 text-14 leading-body tracking-body-small;
-    }
-  }
-
   @font-face
   {
     font-family: "HelveticaNowDisplay-ExtraBold";
@@ -112,13 +94,3 @@
     font-weight: 700;
   }
 } 
-
-.armel
-{
-  width: 299px;
-
-  & > .armel.cantin
-  {
-    color: red;
-  }
-}

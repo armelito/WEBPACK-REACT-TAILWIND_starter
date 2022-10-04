@@ -1,3 +1,12 @@
+/*
+*  NESTING EXAMPLE
+*  ______________________
+*
+*  Nesting css enable with postcss
+*  Do not add a preprocessor with tailwind please. :) 
+*  It would create some performance issues...
+*/
+
 @layer components
 {
   .btn
