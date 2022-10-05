@@ -1,3 +1,8 @@
+/*
+*   I create and export every path needed 
+*   for webpack in this file. 🚀 
+*/
+
 import path from 'path'
 import { fileURLToPath } from 'url'
 
