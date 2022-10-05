@@ -18,17 +18,17 @@
 
   <h1 align="center">PWA with React, Tailwind & Webpack 5</h1>
 
-  <p align="center">
+  <p align="center"></br>
     🔥 This is a React PWA Workbox project for learning how to build React PWA.</br>
     🚀 Webpack 5 is used for bundling and optimazing the application.</br>
     🎨 Tailwind is a css framework I love because it allows to create powerfull theme super fast.
   </p>
-</div>
+</div></br>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details align="center">
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
