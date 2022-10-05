@@ -58,7 +58,7 @@
 ## About The Project
 
 The project is to create a progressive web application with React, Webpack 5 and Tailwind. I used some others tools to help the development as Postcss, Eslint, Stylint, Babel, etc. 
-I will create a smooth analytics dashboard because I am designing a retail dashboard for [https://technis.com](Technis), the company where I work.
+I will create a smooth analytics dashboard because I am designing a retail dashboard for [Technis](https://technis.com), the company where I work.
 
 
 
