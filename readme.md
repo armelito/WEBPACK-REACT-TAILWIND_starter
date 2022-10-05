@@ -119,7 +119,7 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Run this command if you have not installed npm on your machine yet.
 * npm
   ```sh
   npm install npm@latest -g
@@ -144,8 +144,6 @@ This is an example of how to list things you need to use the software and how to
    NODE_ENV=production
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Development server
 
 Run :
@@ -159,7 +157,7 @@ Run :
    ```sh
    npm run prod
    ```
-   
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
