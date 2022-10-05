@@ -16,11 +16,11 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">PWA with React, Tailwind & Webpack 5</h3>
+  <h1 align="center">PWA with React, Tailwind & Webpack 5</h1>
 
   <p align="center">
-    🔥 This is a React PWA Workbox project for learning how to build React PWA.
-    🚀 Webpack 5 is used for bundling and optimazing the application.
+    🔥 This is a React PWA Workbox project for learning how to build React PWA.</br>
+    🚀 Webpack 5 is used for bundling and optimazing the application.</br>
     🎨 Tailwind is a css framework I love because it allows to create powerfull theme super fast.
   </p>
 </div>
@@ -28,7 +28,7 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
+<details align="center">
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -53,11 +53,13 @@
 
 
 
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 The project is to create a progressive web application with React, Webpack 5 and Tailwind. I used some others tools to help the development as Postcss, Eslint, Stylint, Babel, etc. 
 I will create a smooth analytics dashboard because I am designing a retail dashboard for [https://technis.com](Technis), the company where I work.
+
 
 
 ### Why React ?
@@ -67,6 +69,7 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 3. Huge performance
 4. Easy to test
 5. Facebook's support/ressources
+
 
 
 ### Why Webpack ?
@@ -215,7 +218,7 @@ Project Link: [https://github.com/armelito/WEBPACK-REACT-TAILWIND_starter.git](h
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+A list of resources you might find helpful and would like to give credit to.
 
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
