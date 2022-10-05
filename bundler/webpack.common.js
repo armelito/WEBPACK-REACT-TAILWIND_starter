@@ -6,7 +6,7 @@ export const commonConfig =
 {
   entry: path.join(dirSrc, 'index.js'),
   module: { rules: webpackRules },
-  resolve: { extensions: ['*', '.js', '.jsx'], },
+  resolve: { extensions: ['*', '.js', '.jsx'] },
   plugins: webpackPlugins,
   output: 
   {
@@ -14,5 +14,5 @@ export const commonConfig =
     filename: 'bundle.js',
     clean: true
   }, 
-  optimization: webpackOptimization,
+  optimization: webpackOptimization
 }

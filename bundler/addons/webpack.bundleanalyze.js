@@ -17,7 +17,7 @@ export default
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       reportFilename: path.join( dirDist, 'report.html' ),
-      openAnalyzer: false,
-    }),
-  ],
+      openAnalyzer: false
+    })
+  ]
 }

@@ -5,10 +5,6 @@ import { dirRoot } from './utils/routes.js'
 export default 
 {
   mode: 'production',
-  plugins: [
-    new Dotenv({
-      path: path.join(dirRoot, '.env.production'),
-    }),
-  ],
-  devtool: 'source-map',
+  plugins: [ new Dotenv({ path: path.join(dirRoot, '.env.production') }) ],
+  devtool: 'source-map'
 }
