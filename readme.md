@@ -119,8 +119,7 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 
 ### Prerequisites
 
-Run this command if you have not installed npm on your machine yet.
-* npm
+Run this command if you have not installed npm on your machine yet :
   ```sh
   npm install npm@latest -g
   ```
