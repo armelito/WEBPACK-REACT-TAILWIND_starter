@@ -85,7 +85,7 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 
 ### Why Tailwind ?
 
-🎨 **Theme anything** that extends tailwind's config and can be expressed in css variables is something you can theme with this plugin, even other plugins
+😎 **Theme anything** that extends tailwind's config and can be expressed in css variables is something you can theme with this plugin, even other plugins
 
 🍨 **Unlimited themes** as you want! This plugin doesn't care!
 
@@ -93,7 +93,7 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 
 🌑 **Dark theme** is as easy as naming the theme you create as "dark" (or whatever you want), no special config
 
-🤖 **Colors and opacity:** Using tailwind with css variables can get tricky with colors, but this plugin handles all of that for you!
+🎨 **Colors and opacity:** Using tailwind with css variables can get tricky with colors, but this plugin handles all of that for you!
 
 😅 **Easy theme management:** A simple, declarative api that lets you easily create and modify themes
 
@@ -102,13 +102,13 @@ I will create a smooth analytics dashboard because I am designing a retail dashb
 
 ### Why Postcss ?
 
-🎨 **Don't use preprocessor** with tailwind like sass, scss or stylus. Otherwises some issues would happens.
+😈 **Don't use preprocessor** with tailwind like sass, scss or stylus. Otherwises some issues would happens.
 
-🍨 **Fast build** compared to other preprocessors.
+🤝 **Fast build** compared to other preprocessors.
 
-💫 **Write custom plugins** that provide you a total contral of your css compilation.
+🥹 **Write custom plugins** that provide you a total contral of your css compilation.
 
-😅 **A lot of plugins** as nesting for example that provides you nesting your css.
+🚀 **A lot of plugins** as nesting for example that provides you nesting your css.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ Run :
 ## Roadmap
 
 - [x] Webpack config
-- [x] Post css config
+- [x] Postcss config
 - [ ] Tailwind
     - [x] Config
     - [ ] Theme
@@ -179,12 +179,12 @@ Run :
     - [ ] Services
     - [ ] Contexts
 - [ ] PWA
-    - [ ] Workbow
+    - [ ] Workbox
     - [ ] ServiceWorkers
     - [ ] Manifest
 - [ ] Front-end
     - [ ] Sidebar
-    - [ ] Page layoug
+    - [ ] Page layout
     - [ ] Widgets
 - [ ] Back-end
     - [ ] Node JS
