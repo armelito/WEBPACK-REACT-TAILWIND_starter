@@ -1,7 +1,7 @@
 /*
-*   I love separate my config in several files. 🚀
-*   It is personal choice.
-*   I prefere have a readable code easy to maintain. 🤷🏼‍♂️
+*   I love separating my config in several files. 🚀
+*   It is a personal choice. Do as you want.
+*   I prefere writing a readable code easy to maintain. 🤷🏼‍♂️
 */
 
 import { webpackOptimization } from "./webpack.optimization.js"
