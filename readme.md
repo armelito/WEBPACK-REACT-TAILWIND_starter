@@ -207,7 +207,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Armel Cantin - [@my_twitter](https://twitter.com/armelcantin) - armel.cantin@technis.com
 
-Project Link: [https://github.com/armelito/WEBPACK-REACT-TAILWIND_starter.git](here)
+Project Link: [here](https://github.com/armelito/WEBPACK-REACT-TAILWIND_starter.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
