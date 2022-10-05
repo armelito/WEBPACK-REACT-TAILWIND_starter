@@ -1,7 +1,7 @@
 import path from 'path'
 import webpack from 'webpack'
 import Dotenv from 'dotenv-webpack'
-import { __dirname } from './utils/routes.js'
+import { dirRoot } from './utils/routes.js'
 
 export default {
   mode: 'development',
@@ -9,7 +9,7 @@ export default {
   [
     new webpack.HotModuleReplacementPlugin(),
     new Dotenv({
-      path: path.resolve(__dirname, '..', '..', './.env.development'),
+      path: path.join(dirRoot, '.env.development'),
     }),
   ],
   devServer: 
