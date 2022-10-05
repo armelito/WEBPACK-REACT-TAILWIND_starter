@@ -1,5 +1,5 @@
 /*
-*   I love separate my config in several file. 🚀
+*   I love separate my config in several files. 🚀
 *   It is personal choice.
 *   I prefere have a readable code easy to maintain. 🤷🏼‍♂️
 */
