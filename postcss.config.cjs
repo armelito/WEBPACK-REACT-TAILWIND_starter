@@ -4,7 +4,16 @@ module.exports =
   [
     require('postcss-import'),
     require('tailwindcss/nesting')(require('postcss-nesting')),
+    require('postcss-define-property'),
+    require('postcss-define-function'),
+    require('postcss-at-rules-variables'),
+    require('postcss-each'),
+    require('postcss-conditionals'),
+    require('postcss-for'),
+    require('postcss-functions'),
+    require('postcss-mixins'),
     require('autoprefixer'),
+    require('cssnano'),
     require('tailwindcss'),
     [
       'postcss-preset-env',
