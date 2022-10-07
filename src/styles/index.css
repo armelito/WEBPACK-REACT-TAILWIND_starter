@@ -1,3 +1,6 @@
+@import "./properties/index.css";
+@import "./functions/index.css";
+@import "./mixins/index.css";
 @import "tailwindcss/base";
 @import './base/index.css';
 @import "tailwindcss/components";

@@ -52,6 +52,7 @@
     "postcss-loader": "^7.0.1",
     "postcss-mixins": "^9.0.4",
     "postcss-nesting": "^10.2.0",
+    "postcss-simple-vars": "^7.0.0",
     "react-hot-loader": "^4.13.0",
     "serve": "^14.0.1",
     "style-loader": "^3.3.1",

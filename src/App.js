@@ -10,10 +10,11 @@ const App = () =>
       <h4>Vision Dashboard</h4>
       <h5>Vision Dashboard</h5>
       <h6>Vision Dashboard</h6>
-      <div className='flex flex-col armel'>
-        <span className='armel-cantin armel-large'>Vision Dashboard</span>
-        <span className='armel-cantin armel-default'>Vision Dashboard</span>
-        <span className='armel-cantin armel-small'>Vision Dashboard</span>
+      <div className='rectangle'></div>
+      <div className='flex flex-col'>
+        <span>Vision Dashboard</span>
+        <span>Vision Dashboard</span>
+        <span>Vision Dashboard</span>
       </div>
       <div className='btn'>
         <div className='btn-child'>hello</div>

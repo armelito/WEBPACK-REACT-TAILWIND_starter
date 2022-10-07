@@ -1,5 +1,4 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import postcssDefineProperty from 'postcss-define-property'
 
 export const webpackRules = 
 [
@@ -25,37 +24,7 @@ export const webpackRules =
     [
       { loader: MiniCssExtractPlugin.loader },
       { loader: "css-loader", options: { sourceMap: true } },
-      { loader: "postcss-loader", options: 
-        { 
-          sourceMap: true,
-          postcssOptions: 
-          {
-            /*
-            *   Make you able to parse like this :
-            *   
-            *   @property size height width {
-            *     height: $height;
-            *     width: $width;
-            *   }
-            *   
-            *   .rectangle {
-            *     +size: 50px 100px;
-            *   }
-            */
-            plugins: 
-            [
-              postcssDefineProperty({
-                syntax: {
-                  atrule: true,
-                  parameter: '',
-                  property: '+',
-                  separator: ''
-                }
-              })
-            ]
-          }
-        } 
-      },
+      { loader: "postcss-loader", options: { sourceMap: true } },
     ],
   },
   {

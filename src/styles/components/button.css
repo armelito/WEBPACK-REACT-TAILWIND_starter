@@ -1,7 +1,4 @@
 /*
-*  NESTING EXAMPLE
-*  ______________________
-*
 *  Nesting css enable with postcss
 *  Do not add a preprocessor with tailwind please. :) 
 *  It would create some performance issues...
@@ -17,5 +14,10 @@
     {
       @apply text-secondary-darker;
     }
+  }
+
+  .rectangle
+  {
+    +size: 50px 100px;
   }
 }

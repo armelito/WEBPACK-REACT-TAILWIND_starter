@@ -1,0 +1,23 @@
+/*
+*   Custom properties enabled with postcss.
+*   Write your custom properties in this directetory.
+*   Options have been set up to write properties like this:
+*
+*   @property size height width {
+*     height: $height;
+*     width: $width;
+*   }
+*
+*   .rectangle {
+*     +size: 50px 100px;
+*   }
+*
+*  Don't forget to import your files here if you 
+*  separate your custom properties in multiple files. 
+*
+*/
+
+@property size height width {
+  height: $height;
+  width: $width;
+}
