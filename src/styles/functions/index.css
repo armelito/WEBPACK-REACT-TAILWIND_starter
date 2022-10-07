@@ -1,6 +1,6 @@
 /*
 *   Functions are enabled with postcss.
-*   Write your custom functions in this directetory:
+*   Write your functions in this directetory:
 *
 *   @define-function rem($val) {
 *     @return $val / 640 * 10 * 1rem;
@@ -10,8 +10,8 @@
 *     height: rem(640);
 *   }
 *
-*   Don't forget to import your files if you separate your
-*   custom properties in multiple files. 
+*   Don't forget to import your files if you
+*   separate your functions in multiple files. 
 */
 
 @define-function rem($val) 
