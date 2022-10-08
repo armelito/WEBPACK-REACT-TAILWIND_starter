@@ -8,10 +8,12 @@ export const commonConfig =
   module: { rules: webpackRules },
   resolve: { extensions: ['*', '.js', '.jsx'] },
   plugins: webpackPlugins,
+  devServer: { historyApiFallback: true },
   output: 
   {
     path: path.join(dirRoot, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
     clean: true
   }, 
   optimization: webpackOptimization

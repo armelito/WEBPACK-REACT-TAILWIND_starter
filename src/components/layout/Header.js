@@ -1,8 +1,16 @@
 import React from "react"
+import TechnisDefaultBase from '../icons/TechnisDefaultBase'
 
-export default Header = () => 
+const Header = () => 
 {
   return (
-    <div>Hedaer</div>
+    <div>
+      <div id="logo" className="logo">
+        <TechnisDefaultBase/>
+      </div>
+      Header
+    </div>
   )
 }
+
+export default Header
