@@ -1,17 +1,24 @@
-import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import * as ReactDOMClient from 'react-dom/client'
 import App from './App'
 import './styles/index.css'
 
-function AppWithCallbackAfterRender() 
+function AppCallback({ callback }) 
 {
-  useEffect(() => { console.log('Application rendered') })
-
-  return <App />
+  return (
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  )
 }
 
-const container = document.getElementById('app')
-const root = createRoot(container)
-root.render(<AppWithCallbackAfterRender />)
+const callback = () => console.log("rendered")
 
-module.hot.accept()
+const rootElement = document.getElementById('app')
+
+module.hot ? 
+  ReactDOMClient.createRoot(rootElement).render(<AppCallback callback={callback}/>) : 
+  ReactDOMClient.hydrateRoot(rootElement, <App tab="home" />)
+
+if(typeof module.hot !== "undefined")
+  module.hot.accept()

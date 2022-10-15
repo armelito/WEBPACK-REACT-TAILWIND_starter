@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 import TechnisDefaultBase from '../icons/TechnisDefaultBase'
 
 const Header = () => 
@@ -8,7 +9,7 @@ const Header = () =>
       <div id="logo" className="logo">
         <TechnisDefaultBase/>
       </div>
-      Header
+      <Link to='/' className='btn'> Back to HomePage </Link>
     </div>
   )
 }

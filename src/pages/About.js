@@ -1,12 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
+import DefaultLayout from "../components/layout/Default"
 
 const About = () => 
 {
   return (
-    <Layout> 
-      <h1>About</h1> 
-    </Layout>
+    <DefaultLayout> 
+      <h1>About</h1>
+    </DefaultLayout>
   )
 }
 
