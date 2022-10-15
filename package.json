@@ -11,7 +11,7 @@
     "build": "webpack --config bundler/webpack.config.js --env env=prod",
     "build:analyze": "npm run build -- --env addon=bundleanalyze",
     "prod": "npm run build && serve -s dist",
-    "svg": "svgr --native --out-dir src/components/icons -- src/shared/svg --config-file ./svgr/svgr.config.json --template ./svgr/svg.template.js"
+    "svg": "svgr --native --config-file svgr/svgr.config.json --template svgr/svg.template.cjs --out-dir src/components/icons -- src/shared/svg"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",

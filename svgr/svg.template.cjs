@@ -26,4 +26,4 @@ const template = ({ imports, interfaces, componentName, props, jsx, exports }, {
   `
 }
 
-export default template
+module.exports = template
