@@ -3,6 +3,8 @@ import * as ReactDOMClient from 'react-dom/client'
 import App from './App'
 import './styles/index.css'
 
+const rootElement = document.getElementById('app')
+
 function AppCallback({ callback }) 
 {
   return (
@@ -13,8 +15,6 @@ function AppCallback({ callback })
 }
 
 const callback = () => console.log("rendered")
-
-const rootElement = document.getElementById('app')
 
 module.hot ? 
   ReactDOMClient.createRoot(rootElement).render(<AppCallback callback={callback}/>) : 
