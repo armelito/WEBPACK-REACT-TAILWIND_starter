@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from 'react-router-dom'
-import TechnisDefaultBase from '../icons/TechnisDefaultBase'
+import TechnisDefaultBase from '../icons/logos/TechnisDefaultBase'
 
 const Header = () => 
 {

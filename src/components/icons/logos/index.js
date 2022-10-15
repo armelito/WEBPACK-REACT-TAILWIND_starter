@@ -1,2 +1,2 @@
 export { default as TechnisDefaultBase } from "./TechnisDefaultBase";
-export { default as TechnisDefaultIcon } from "./TechnisDefaultIcon";
+export { default as TechnisSquare } from "./TechnisSquare";
