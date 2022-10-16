@@ -5,13 +5,12 @@ import TechnisDefaultBase from '../icons/logos/TechnisDefaultBase'
 const Header = () => 
 {
   return (
-    <div>
+    <header>
       <div id="logo" className="logo">
-        <TechnisDefaultBase/>
+        <TechnisDefaultBase width='100%' height='100%'/>
       </div>
-      <Link to='/' className='btn'> Back to HomePage </Link>
-    </div>
+    </header>
   )
 }
-
+//<Link to='/' className='btn'> Back to HomePage </Link>
 export default Header

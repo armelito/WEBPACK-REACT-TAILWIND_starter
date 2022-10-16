@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import * as ReactDOMClient from 'react-dom/client'
 import App from './App'
 import './styles/index.css'
 
 const rootElement = document.getElementById('app')
 
-function AppCallback({ callback }) 
+function AppCallback() 
 {
+  useEffect(() => 
+  {
+    console.log('rendered')
+  })
+
   return (
     <React.StrictMode>
       <App />
@@ -14,10 +19,8 @@ function AppCallback({ callback })
   )
 }
 
-const callback = () => console.log("rendered")
-
 module.hot ? 
-  ReactDOMClient.createRoot(rootElement).render(<AppCallback callback={callback}/>) : 
+  ReactDOMClient.createRoot(rootElement).render(<AppCallback />) : 
   ReactDOMClient.hydrateRoot(rootElement, <App tab="home" />)
 
 if(typeof module.hot !== "undefined")

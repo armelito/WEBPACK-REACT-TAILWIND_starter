@@ -21,7 +21,6 @@ const
   SETTINGS_USERS, 
   SETTINGS_RIGHTSYSTEM, 
   SETTINGS_TAGS,
-  PROFILE_GENERAL,
   PROFILE_SECURITY,
   PROFILE_PREFERENCES_THEME,
   PROFILE_PREFERENCES_SIDEBAR,
@@ -56,12 +55,12 @@ const
   Groups,
   RightSystem,
   Tags,
-  GeneralProfile,
   Theme,
   Sidebar,
   DateTime,
   LanguageRegion,
-  Advanced
+  Advanced,
+  Error
 }
 = components
 
@@ -117,12 +116,11 @@ let routes =
         element: <VisitorJourney />,
       },
       {
-        path: SETTINGS_GENERAL,
         element: <SettingsLayout />,
         children:
         [
           {
-            index: true,
+            path: SETTINGS_GENERAL,
             element: <GeneralSettings />
           },
           {
@@ -148,18 +146,16 @@ let routes =
         ]
       },
       {
-        path: PROFILE_PREFERENCES_THEME,
         element: <ProfileLayout />,
         children:
         [
           {
-            path: PROFILE_PREFERENCES_THEME,
             element: <ProfilePreferencesLayout />,
             children: 
             [
               {
-                index: true,
-                element: <GeneralProfile />
+                path: PROFILE_PREFERENCES_THEME,
+                element: <Theme />
               },
               {
                 path: PROFILE_PREFERENCES_SIDEBAR,
