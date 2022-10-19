@@ -3,7 +3,9 @@ import React from "react"
 const Profiles = () =>
 {
   return (
-    <h1>Profile</h1>
+    <main>
+      <h1>Profile</h1> 
+    </main>
   )
 }
 

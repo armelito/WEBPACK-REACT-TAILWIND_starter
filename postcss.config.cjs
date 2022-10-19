@@ -31,7 +31,7 @@ module.exports =
       {
         features: 
         {
-          'nesting-rules': true,
+          'nesting-rules': false,
         },
       },
     ],

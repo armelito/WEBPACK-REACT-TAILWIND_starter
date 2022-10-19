@@ -3,7 +3,9 @@ import React from "react"
 const LanguageRegion = () => 
 {
   return (
-    <h1>LanguageRegion</h1>
+    <main>
+      <h1>Language & Region</h1> 
+    </main>
   )
 }
 

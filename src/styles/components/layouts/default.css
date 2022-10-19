@@ -1,0 +1,8 @@
+@layer components
+{
+  .layout
+  {
+    @mixin flexbox row, flex-start, flex-start;
+    @apply w-screen;
+  }
+}

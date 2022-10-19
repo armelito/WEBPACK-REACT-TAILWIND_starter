@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports =
 {
   content: 
@@ -628,7 +630,36 @@ module.exports =
   },
   plugins: 
   [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    plugin(function ({ addUtilities, matchUtilities, theme }) 
+    {
+      addUtilities({
+        '.ratio-sidebar-desktop': 
+        {
+          width: 'calc(100vw / 1440 * 296)',
+        },
+        '.ratio-dashboard-desktop': 
+        {
+          width: 'calc(100vw / 1440 * 1144)',
+        },
+        '.ratio-sidebar-collapsed': 
+        {
+          width: 'calc(100vw / 1440 * 75)',
+        },
+        '.ratio-dashboard-collapsed': 
+        {
+          width: 'calc(100vw / 1440 * 1365)',
+        },
+      })
+      matchUtilities(
+        {
+          'w-ratio': (value) => ({
+            width: `calc(${theme('width.screen')} / 1440 * ${value})`
+          }),
+        },
+        { values: theme('width') }
+      )
+    })
   ],
   corePlugins: 
   {

@@ -3,7 +3,9 @@ import React from "react"
 const Tags = () => 
 {
   return (
-    <h1>Tags</h1>
+    <main>
+      <h1>Tags</h1> 
+    </main>
   )
 }
 

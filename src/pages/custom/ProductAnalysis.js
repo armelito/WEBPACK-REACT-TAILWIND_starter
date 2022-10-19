@@ -3,7 +3,9 @@ import React from "react"
 const ProductAnalysis = () => 
 {
   return (
-    <h1>ProductAnalysis</h1>
+    <main>
+      <h1>Product Analysis</h1> 
+    </main>
   )
 }
 

@@ -14,7 +14,7 @@
 *   separate your functions in multiple files. 
 */
 
-@define-function rem($val) 
+@define-function pxToRem($px)
 {
-  @return $val / 640 * 10 * 1rem;
+  @return $px / 16 * 1rem;
 }

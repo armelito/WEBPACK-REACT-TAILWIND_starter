@@ -1,5 +1,5 @@
 // Auto-generated file created by svgr-cli source svg.template.js
-// The svg components is generated when running dev or prod mode
+// The svg components is generated when running dev or prod
 // To update without starting a server : npm run svg
 // Do not edit
 import * as React from "react";
@@ -7,11 +7,12 @@ import PropTypes from "prop-types";
 
 const SvgEstatePerformance = (props) => (
   <svg
-    width={props.width || 20}
-    height={props.height || 20}
+    viewBox="0 0 20 20"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     role="img"
+    width={props.width || 20}
+    height={props.height || 20}
     {...props}
   >
     <g clipPath="url(#Estate_Performance_svg__a)">

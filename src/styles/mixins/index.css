@@ -24,3 +24,14 @@
 *   you separate your mixins in multiple files. 
 *
 */
+
+@define-mixin flexbox $direction, $horizontal, $vertical {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@define-mixin flex $grow, $shrink, $basis {
+  flex: $grow $shrink $basis
+}

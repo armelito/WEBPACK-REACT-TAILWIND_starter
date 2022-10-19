@@ -3,7 +3,9 @@ import React from "react"
 const DateTime = () => 
 {
   return (
-    <h1>DateTime</h1>
+    <main>
+      <h1>Date & Time</h1> 
+    </main>
   )
 }
 

@@ -1,7 +1,8 @@
 {
   "typescript": false,
   "removeViewBox": false,
-  "replaceAttrValues": {
+  "replaceAttrValues": 
+  {
     "white": "{props.color || `#FFFFFF`}",
     "#FFFFFF": "{props.color || `#FFFFFF`}",
     "#2B3458": "{props.color || `#2B3458`}",
@@ -12,7 +13,8 @@
     "#FF6161": "{props.color || `#FF6161`}",
     "#39D98A": "{props.color || `#39D98A`}"
   },
-  "svgProps": {
+  "svgProps": 
+  {
     "width": "{props.width || 20}",
     "height": "{props.height || 20}"
   }

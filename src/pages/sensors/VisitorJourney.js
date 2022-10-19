@@ -3,7 +3,9 @@ import React from "react"
 const VisitorJourney = () => 
 {
   return (
-    <h1>Visitor Journey</h1>
+    <main>
+      <h1>Visitor Journey</h1> 
+    </main>
   )
 }
 

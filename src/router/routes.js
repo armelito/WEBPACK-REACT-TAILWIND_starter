@@ -6,7 +6,7 @@ const
 {
   HOME,
   LOGIN,
-  ABOUT,
+  REPORTING,
   REALTIME,
   ESTATE_PERFORMANCE,
   STORE_ANALYTICS,
@@ -27,6 +27,7 @@ const
   PROFILE_PREFERENCES_DATE_TIME,
   PROFILE_PREFERENCES_LANGUAGE_REGION,
   PROFILE_PREFERENCES_ADVANCED,
+  HELP_CENTER,
   ERROR
 }
 = paths
@@ -39,7 +40,7 @@ const
   ProfilePreferencesLayout,
   Home,
   Login,
-  About,
+  Reporting,
   RealTime,
   EstatePerformance,
   StoreAnalytics,
@@ -60,6 +61,7 @@ const
   DateTime,
   LanguageRegion,
   Advanced,
+  HelpCenter,
   Error
 }
 = components
@@ -80,8 +82,8 @@ let routes =
         element: <Login />,
       },
       {
-        path: ABOUT,
-        element: <About />,
+        path: REPORTING,
+        element: <Reporting />,
       },
       {
         path: REALTIME,
@@ -144,6 +146,10 @@ let routes =
             element: <Tags />
           }
         ]
+      },
+      {
+        path: HELP_CENTER,
+        element: <HelpCenter />,
       },
       {
         element: <ProfileLayout />,

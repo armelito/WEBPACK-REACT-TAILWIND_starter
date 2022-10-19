@@ -3,7 +3,9 @@ import React from "react"
 const Theme = () => 
 {
   return (
-    <h1>Theme</h1>
+    <main>
+      <h1>Theme</h1> 
+    </main>
   )
 }
 

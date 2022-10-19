@@ -3,7 +3,9 @@ import React from "react"
 const RealTime = () => 
 {
   return (
-    <h1>RealTime</h1>
+    <main>
+      <h1>Real-Time KPIs</h1> 
+    </main>
   )
 }
 

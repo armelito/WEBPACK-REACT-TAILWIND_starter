@@ -1,5 +1,5 @@
 export const HOME = "/"
-export const ABOUT = "about"
+export const REPORTING = "reporting"
 export const ERROR = "*"
 export const REALTIME = "real-time"
 export const ESTATE_PERFORMANCE = "estate-performance"
@@ -22,3 +22,4 @@ export const PROFILE_PREFERENCES_LANGUAGE_REGION = "profile/preferences/language
 export const PROFILE_PREFERENCES_ADVANCED = "profile/preferences/advanced"
 export const PROFILE_SECURITY = "profile/security"
 export const LOGIN = "login"
+export const HELP_CENTER = "help-center"

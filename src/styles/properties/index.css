@@ -21,3 +21,7 @@
   height: $height;
   width: $width;
 }
+
+@property ratio screen width {
+  width: calc(1OOvw / $screen * $width);
+}

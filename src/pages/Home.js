@@ -1,10 +1,11 @@
 import React from "react"
-import DefaultLayout from "../components/layout/Default"
 
 const Home = () => 
 {
   return (
-    <h1>Home</h1> 
+    <main>
+      <h1>Home</h1> 
+    </main>
   )
 }
 

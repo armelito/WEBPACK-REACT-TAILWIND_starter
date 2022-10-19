@@ -3,7 +3,9 @@ import React from "react"
 const EstatePerformance = () => 
 {
   return (
-    <h1>EstatePerformance</h1>
+    <main>
+      <h1>Estate Performance</h1> 
+    </main>
   )
 }
 

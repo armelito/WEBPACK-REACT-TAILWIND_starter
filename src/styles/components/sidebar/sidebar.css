@@ -1,0 +1,13 @@
+@layer components
+{
+  .sidebar
+  {
+    @mixin flex 0, 1, auto;
+    @apply bg-dark-2 ratio-sidebar-desktop h-screen;
+
+    & > .sidebar__title
+    {
+      @apply text-secondary-darker;
+    }
+  }
+}

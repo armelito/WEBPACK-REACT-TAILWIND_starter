@@ -3,7 +3,9 @@ import React from "react"
 const GeneralSettings = () => 
 {
   return (
-    <h1>Organization settings</h1>
+    <main>
+      <h1>General</h1> 
+    </main>
   )
 }
 

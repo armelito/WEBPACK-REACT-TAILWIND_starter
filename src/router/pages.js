@@ -6,7 +6,7 @@ export const ProfilePreferencesLayout = React.lazy(() => import("../components/l
 export const SettingsLayout = React.lazy(() => import("../components/layout/Settings"))
 
 export const Home = React.lazy(() => import("../pages/Home"))
-export const About = React.lazy(() => import("../pages/About"))
+export const Reporting = React.lazy(() => import("../pages/Reporting"))
 export const Login = React.lazy(() => import("../pages/Login"))
 export const Error = React.lazy(() => import("../pages/Error"))
 export const RealTime = React.lazy(() => import("../pages/custom/RealTime"))
@@ -30,3 +30,4 @@ export const LanguageRegion = React.lazy(() => import("../pages/profile/preferen
 export const Sidebar = React.lazy(() => import("../pages/profile/preferences/Sidebar"))
 export const Theme = React.lazy(() => import("../pages/profile/preferences/Theme"))
 export const Security = React.lazy(() => import("../pages/profile/Security"))
+export const HelpCenter = React.lazy(() => import("../pages/HelpCenter"))

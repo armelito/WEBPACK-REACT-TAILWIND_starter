@@ -12,7 +12,7 @@
   body
   {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: Mulish-Regular;
   }
 
@@ -22,5 +22,17 @@
     height: 100%;
     object-fit: cover;
     vertical-align: middle;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  main
+  {
+    @apply ratio-dashboard-desktop;
+    +flex: 1 0 auto;
   }
 }

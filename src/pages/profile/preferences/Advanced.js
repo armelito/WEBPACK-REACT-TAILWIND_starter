@@ -3,7 +3,9 @@ import React from "react"
 const Advanced = () => 
 {
   return (
-    <h1>Advanced</h1>
+    <main>
+      <h1>Advanced</h1> 
+    </main>
   )
 }
 

@@ -6,9 +6,9 @@ const Header = () =>
 {
   return (
     <header>
-      <div id="logo" className="logo">
+      <figure id="logo" className="logo">
         <TechnisDefaultBase width='100%' height='100%'/>
-      </div>
+      </figure>
     </header>
   )
 }
