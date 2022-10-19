@@ -11,8 +11,8 @@
     "build": "npm run svgo && npm run svgr && webpack --config bundler/webpack.config.js --env env=prod",
     "build:analyze": "npm run build -- --env addon=bundleanalyze",
     "prod": "npm run build && serve -s dist",
-    "svgr": "svgr --config-file ./svgr/svgr.config.json --template ./svgr/svg.template.cjs --no-dimensions --out-dir src/components/icons -- ./src/shared/svg",
-    "svgo": "svgo --config svgr/svgo.config.cjs -f src/shared/svg/logos src/shared/svg/sidebar"
+    "svgr": "svgr --config-file svg/svgr.config.json --template svg/svg.template.cjs --no-dimensions --out-dir src/components/icons -- ./src/shared/svg",
+    "svgo": "svgo --config svg/svgo.config.cjs -f src/shared/svg/logos src/shared/svg/sidebar"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
