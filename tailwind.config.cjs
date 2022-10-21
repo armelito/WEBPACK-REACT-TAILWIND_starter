@@ -402,13 +402,13 @@ module.exports =
         'h4': '-0.005em',
         'h5': '0em',
         'h6': '0em',
-        'subtitle': '0.025em',
-        'body-large': '0.075em',
-        'body': '0.05em',
-        'body-small': '0.025em',
-        'button-large': '0.3em',
-        'button': '0.25em',
-        'button-small': '0.20em',
+        'subtitle': '0.005em',
+        'body-large': '0.01em',
+        'body': '0.015em',
+        'body-small': '0.020em',
+        'button-large': '0.050em',
+        'button': '0.045em',
+        'button-small': '0.040em',
       },              
       colors: 
       {
@@ -419,18 +419,18 @@ module.exports =
         },
         dark: 
         {
-          '1': '#14141F',
-          '2': '#27283F',
-          '3': '#3A3C5F',
-          '4': '#4E507F',
-          '5': '#61649E',
+          '1': '#161522',
+          '2': '#28293D',
+          '3': '#4B4D73',
+          '4': '#8A8DBA',
+          '5': '#C0C2DE',
         },
         light: 
         {
-          '5': '#7D80B5',
-          '4': '#9EA0C7',
-          '3': '#BABCDE',
-          '2': '#D9DEF2',
+          '5': '#C7C7E5',
+          '4': '#E5E5F6',
+          '3': '#EDEDF8',
+          '2': '#F7F7FC',
           '1': '#FFFFFF',
         },
         primary: 

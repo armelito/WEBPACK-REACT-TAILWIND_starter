@@ -30,6 +30,11 @@
     @apply font-displayBold text-dark-3 text-h6 leading-h6 tracking-h6;
   }
 
+  .btn-default
+  {
+    @apply font-displayBold text-16 leading-button-large tracking-button;
+  }
+
   @font-face
   {
     font-family: "HelveticaNowDisplay-ExtraBold";

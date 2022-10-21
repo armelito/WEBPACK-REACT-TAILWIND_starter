@@ -8,6 +8,7 @@ export { default as Home } from "./Home";
 export { default as ProductAnalysis } from "./ProductAnalysis";
 export { default as RealTime } from "./RealTime";
 export { default as Reporting } from "./Reporting";
+export { default as SectionChevron } from "./SectionChevron";
 export { default as Settings } from "./Settings";
 export { default as SidebarLogoSquare } from "./SidebarLogoSquare";
 export { default as SidebarLogoSquare20 } from "./SidebarLogoSquare20";

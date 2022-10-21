@@ -3,11 +3,48 @@
   .sidebar
   {
     @mixin flex 0, 1, auto;
-    @apply bg-dark-2 ratio-sidebar-desktop h-screen;
+    @apply bg-dark-2 ratio-sidebar-desktop h-screen p-2;
 
-    & > .sidebar__title
+    & > .organization
     {
-      @apply text-secondary-darker;
+      @mixin flexbox row, flex-start, center, 12px;
+      @apply w-full p-2;
+
+      & > h6
+      {
+        @apply text-white;
+      }
     }
+
+    & > div
+    {
+      @apply relative px-2;
+
+      & > .link
+      {
+        @mixin flexbox row, flex-start, center, 12px;
+        @apply px-3 py-2.5;
+
+        & > figure
+        {
+          @apply h-[20px];
+        }
+
+        & > div
+        {
+          @apply text-dark-4;
+        }
+      }
+
+      & > .link__active-element
+      {
+        @apply absolute top-1/2 -right-2 w-1 h-8 bg-primary-default rounded-8 -translate-y-1/2;
+      }
+    }
+  }
+
+  .label
+  {
+    background: #FFFFFF;
   }
 }

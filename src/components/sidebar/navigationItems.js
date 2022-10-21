@@ -24,7 +24,6 @@ const
 {
   Home,
   Reporting,
-  Favoris,
   RealTime,
   EstatePerformance,
   StoreAnalytics,
@@ -38,25 +37,19 @@ const
 }
 = icons
 
-const sidebarNavItems = 
+const navigationItems = 
 [
   {
     display: 'Home',
     icon: <Home />,
     to: HOME,
-    section: ''
+    section: null
   },
   {
     display: 'Reporting',
     icon: <Reporting />,
     to: REPORTING,
-    section: ''
-  },
-  {
-    display: 'Favoris',
-    icon: <Favoris />,
-    to: Home,
-    section: ''
+    section: null
   },
   {
     display: 'Real-Time KPIs',
@@ -102,7 +95,7 @@ const sidebarNavItems =
   },
   {
     display: 'Engagement',
-    icon: <Heart width="100%" height="100%" />,
+    icon: <Heart />,
     to: ENGAGEMENT,
     section: 'SENSOR VIEWS'
   },
@@ -110,14 +103,14 @@ const sidebarNavItems =
     display: 'Settings',
     icon: <Settings />,
     to: SETTINGS_GENERAL,
-    section: ''
+    section: 'footer'
   },
   {
     display: 'Help Center',
     icon: <Help />,
     to: HELP_CENTER,
-    section: ''
+    section: 'footer'
   },
 ]
 
-export default sidebarNavItems
+export default navigationItems
