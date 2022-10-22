@@ -1,17 +1,15 @@
 import React from 'react'
 import { useSidebar } from './useSidebar'
 
-export const useProSidebar = () => 
+export const useProviderSidebar = () => 
 {
   const 
   {
     updateSidebarState,
     updateCollapseState,
-    updateToggleState,
     collapsed,
-    toggled,
-    //rtl,
-  } = useSidebar()
+  } 
+  = useSidebar()
 
   const collapseSidebar = React.useCallback(
     (value) => 
@@ -22,20 +20,8 @@ export const useProSidebar = () =>
     [updateCollapseState, updateSidebarState]
   )
 
-  const toggleSidebar = React.useCallback(
-    (value) => 
-    {
-      if (value === undefined) updateToggleState()
-      else updateSidebarState({ toggled: value })
-    },
-    [updateToggleState, updateSidebarState],
-  )
-
   return {
     collapseSidebar,
-    toggleSidebar,
     collapsed: !!collapsed,
-    toggled: !!toggled,
-    //rtl: !!rtl,
   };
 };

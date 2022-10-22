@@ -1,5 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import { Outlet } from "react-router-dom"
+import { useProviderSidebar } from "../../hooks/sidebar/useProviderSidebar"
+import ButtonSquare from "../buttons/ButtonSquare"
 import * as icons from '../icons/sidebar/index'
 import * as paths from '../../router/paths'
 import 
@@ -43,15 +45,23 @@ const
   VisitorJourney,
   Heart,
   Settings,
-  Help
+  Help,
+  DoubleChevron
 }
 = icons
 
 const DefaultLayout = () => 
 {
+  const { collapseSidebar } = useProviderSidebar()
+
+  const handleCollapsing = () =>
+  {
+    collapseSidebar()
+  }
+
   return (
     <div className="layout">
-      <Sidebar>
+      <Sidebar width={'296'} collapsedWidth={'75'}>
         <OrganizationLabel />
         <Navigation>
           <NavigationItem link={HOME} icon={<Home />}>Home</NavigationItem>
@@ -71,6 +81,7 @@ const DefaultLayout = () =>
           <NavigationItem link={SETTINGS_GENERAL} icon={<Settings />}>Settings</NavigationItem>
           <NavigationItem link={HELP_CENTER} icon={<Help />}>Help</NavigationItem>
         </Navigation>
+        <ButtonSquare icon={<DoubleChevron />} className={'side-button-fixed'} callback={handleCollapsing}/>
       </Sidebar>
       <Outlet />
     </div>

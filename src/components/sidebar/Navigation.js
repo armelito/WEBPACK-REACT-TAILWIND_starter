@@ -6,9 +6,7 @@ const NavigationComponent = (
   { 
     children, 
     className, 
-    closeOnClick = false, 
-    renderNavigationItemStyles,  
-    ...rest 
+    closeOnClick = false
   },
   ref,
 ) => 
@@ -27,12 +25,12 @@ const NavigationComponent = (
 
   React.useEffect(() => 
   {
-    updateNavigationState({ renderNavigationItemStyles, closeOnClick })
-  }, [ renderNavigationItemStyles, closeOnClick, updateNavigationState ])
+    updateNavigationState({ closeOnClick })
+  }, [ closeOnClick, updateNavigationState ])
 
   return (
     <NavigationContext.Provider value={providerValue}>
-      <nav ref={ref} className={classnames('navigation', className)} {...rest}>
+      <nav ref={ref} className={classnames('navigation', className)}>
         <ul>{children}</ul>
       </nav>
     </NavigationContext.Provider>

@@ -28,6 +28,8 @@
   {
     text-decoration: none;
     color: inherit;
+    box-sizing: border-box;
+    cursor: pointer;
   }
 
   main
@@ -41,5 +43,10 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
+  }
+
+  li
+  {
+    display: inline-block;
   }
 }

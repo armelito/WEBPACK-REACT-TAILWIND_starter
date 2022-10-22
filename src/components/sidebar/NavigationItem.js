@@ -13,12 +13,11 @@ export const NavigationItemComponent = (
     icon,
     className,
     active = false,
-    ...rest
   },
   ref,
 ) => 
 {
-  const { collapsed, transitionDuration } = useSidebar()
+  const { collapsed } = useSidebar()
   const { renderNavigationItemStyles } = useNavigation()
 
   return (
@@ -29,7 +28,7 @@ export const NavigationItemComponent = (
     >
       <StyledNavigationLink 
         to={link} 
-        className={'link navigation-anchor'} 
+        className={'navigation-anchor'} 
         active={+active}
       >
         {icon && (

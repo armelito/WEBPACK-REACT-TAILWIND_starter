@@ -4,7 +4,7 @@ export const SidebarContext = React.createContext(undefined)
 
 export const SidebarProvider = ({ children }) => 
 {
-  const [sidebarState, setSidebarState] = React.useState()
+  const [ sidebarState, setSidebarState ] = React.useState()
 
   const updateSidebarState = React.useCallback((values) => 
   {
@@ -13,18 +13,15 @@ export const SidebarProvider = ({ children }) =>
 
   const updateCollapseState = React.useCallback(() => 
   {
-    setSidebarState((prevState) => ({ ...prevState, collapsed }))
-  }, [])
-
-  const updateToggleState = React.useCallback(() => 
-  {
-    setSidebarState((prevState) => ({ ...prevState, toggled }))
+    setSidebarState((prevState) => ({ ...prevState, collapsed: !Boolean(prevState?.collapsed) }))
   }, [])
 
   const providerValue = React.useMemo(
-    () => ({ ...sidebarState, updateSidebarState, updateCollapseState, updateToggleState }),
-    [sidebarState, updateCollapseState, updateSidebarState, updateToggleState],
+    () => ({ ...sidebarState, updateSidebarState, updateCollapseState }),
+    [ sidebarState, updateCollapseState, updateSidebarState ],
   )
+
+  console.log(providerValue)
 
   return <SidebarContext.Provider value={providerValue}>{children}</SidebarContext.Provider>
 }

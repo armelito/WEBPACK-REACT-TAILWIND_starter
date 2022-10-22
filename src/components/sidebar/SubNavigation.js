@@ -1,74 +1,40 @@
 import React from 'react'
-import styled from 'styled-components'
 import classnames from 'classnames'
-import { SubNavigationItem } from './SubNavigationItem'
 import { createPopper } from '@popperjs/core'
-import { useSidebar } from '../../hooks/sidebar/useSidebar'
-import { useNavigation } from '../../hooks/sidebar/useNavigation'
-import { StyledNavigationLink } from './styled/StyledNavigationLink'
-import { StyledNavigationLabel } from './styled/StyledNavigationLabel'
+import { SubNavigationItem } from './SubNavigationItem'
+import { useSidebar, useNavigation } from '../../hooks/sidebar/index'
+import 
+{ 
+  StyledSubNavigationButton, 
+  StyledNavigationLabel,
+  StyledSubNavigation,
+  StyledExpandIcon
+}
+from './styled/index'
 
-const StyledExpandIconWrapper = styled.span`
-  ${({ collapsed }) =>
-    collapsed &&
-    `
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    `}
-`;
-
-const StyledExpandIcon = styled.span`
-  display: inline-block;
-  transition: transform 0.3s;
-  border-left: 2px solid currentcolor;
-  border-top: 2px solid currentcolor;
-  width: 5px;
-  height: 5px;
-  transform: rotate(${({ open }) => (open ? '-135deg' : '-45deg')});
-`;
-
-const StyledExpandIconCollapsed = styled.span`
-  width: 5px;
-  height: 5px;
-  background-color: currentcolor;
-  border-radius: 50%;
-  display: inline-block;
-`;
-
-const StyledSubMenu = styled.li`
-  position: relative;
-  width: 100%;
-
-  ${({ navigationItemStyles }) => navigationItemStyles};
-`;
 
 export const SubNavigationComponent = (
   {
     children,
-    link,
-    className,
     label,
-    icon,
     open: openSubmenu,
     defaultOpen,
     active = false,
     onOpenChange,
     onClick,
-    ...rest
   },
   ref,
 ) => 
 {
-  const { collapsed, transitionDuration, toggled } = useSidebar()
-  const { renderNavigationItemStyles, renderExpandIcon, closeOnClick } = useNavigation()
+  const { collapsed, transitionDuration } = useSidebar()
+  const { renderNavigationItemStyles, closeOnClick } = useNavigation()
 
   const [open, setOpen] = React.useState(!!defaultOpen)
   const [openDefault, setOpenDefault] = React.useState(!!defaultOpen)
   const [openWhenCollapsed, setOpenWhenCollapsed] = React.useState(false)
   const [popperInstance, setPopperInstance] = React.useState()
 
+  // Create a unique key for each node
   const childNodes = React.Children.toArray(children).filter(Boolean)
 
   const anchorRef = React.useRef(null)
@@ -119,8 +85,7 @@ export const SubNavigationComponent = (
     {
       const ro = new ResizeObserver(() => 
       {
-        if(popperInstance) 
-          popperInstance.update()
+        if(popperInstance) popperInstance.update()
       })
 
       ro.observe(SubMenuContentRef.current)
@@ -129,11 +94,11 @@ export const SubNavigationComponent = (
 
     setTimeout(() => 
     {
-      if(popperInstance)  popperInstance.update()
+      if(popperInstance) popperInstance.update()
     }, 
     transitionDuration)
   }, 
-  [popperInstance, transitionDuration, toggled])
+  [ popperInstance, transitionDuration ])
 
   React.useLayoutEffect(() => 
   {
@@ -142,7 +107,7 @@ export const SubNavigationComponent = (
     if(collapsed) 
     {
       setOpenWhenCollapsed(false)
-      setOpen(false)
+      //setOpen(false)
     }
   }, [collapsed, transitionDuration, popperInstance])
 
@@ -173,53 +138,31 @@ export const SubNavigationComponent = (
 
   React.useEffect(() => 
   {
-    if (openSubmenu) setOpenDefault(openSubmenu)
+    if(openSubmenu) setOpenDefault(openSubmenu)
   }, [])
 
   return (
-    <StyledSubMenu
+    <StyledSubNavigation
       ref={ref}
       className={classnames(
         'sub-navigation',
         'navigation-item',
         { active },
         { open: openSubmenu ?? open },
-        className,
       )}
       navigationItemStyles={renderNavigationItemStyles?.({ collapsed: !!collapsed, active })}
     >
-      <StyledNavigationLink
+
+      <StyledSubNavigationButton
         ref={anchorRef}
         collapsed={collapsed ? 1 : undefined}
         className="navigation-anchor"
         onClick={handleSlideToggle}
-        active={+active}
       >
-        {icon && (
-          <figure className="navigation-icon">
-            {icon}
-          </figure>
-        )}
-
+        <StyledExpandIcon className="expand-icon" collapsed={collapsed} open={openSubmenu ?? open} />
         <StyledNavigationLabel className="navigation-label">{label}</StyledNavigationLabel>
+      </StyledSubNavigationButton>
 
-        <StyledExpandIconWrapper
-          className="expand-icon"
-          collapsed={collapsed}
-        >
-          {renderExpandIcon ? (
-            renderExpandIcon({
-              collapsed: !!collapsed,
-              open: openSubmenu ?? open,
-              active,
-            })
-          ) : collapsed ? (
-            <StyledExpandIconCollapsed />
-          ) : (
-            <StyledExpandIcon open={openSubmenu ?? open} />
-          )}
-        </StyledExpandIconWrapper>
-      </StyledNavigationLink>
       <SubNavigationItem
         ref={SubMenuContentRef}
         openWhenCollapsed={openWhenCollapsed}
@@ -236,7 +179,8 @@ export const SubNavigationComponent = (
           )
         }
       </SubNavigationItem>
-    </StyledSubMenu>
+
+    </StyledSubNavigation>
   )
 }
 export const SubNavigation = React.forwardRef(SubNavigationComponent)

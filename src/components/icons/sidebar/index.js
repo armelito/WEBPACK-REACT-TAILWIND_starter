@@ -1,5 +1,6 @@
 export { default as AirQuality } from "./AirQuality";
 export { default as Counting } from "./Counting";
+export { default as DoubleChevron } from "./DoubleChevron";
 export { default as EstatePerformance } from "./EstatePerformance";
 export { default as Favoris } from "./Favoris";
 export { default as Heart } from "./Heart";

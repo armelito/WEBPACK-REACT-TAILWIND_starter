@@ -3,6 +3,7 @@ import { Sidebar } from './Sidebar'
 import { Navigation } from './Navigation'
 import { NavigationItem } from './NavigationItem'
 import { SubNavigation } from './SubNavigation'
+import { SubNavigationItem } from './SubNavigationItem'
 import OrganizationLabel from './OrganizationLabel'
 import navigationItems from './navigationItems'
 
@@ -13,6 +14,7 @@ export
   Navigation,
   NavigationItem,
   SubNavigation,
+  SubNavigationItem,
   OrganizationLabel,
   navigationItems
 }

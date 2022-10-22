@@ -1,6 +1,5 @@
 import React from "react"
 import classNames from "classnames"
-import styled from 'styled-components'
 import { useSidebar } from '../../hooks/sidebar/useSidebar'
 import { StyledSidebar } from './styled/StyledSidebar'
 
@@ -11,7 +10,6 @@ const SidebarComponent = ({
     className,
     children,
     transitionDuration = 300,
-    ...rest
   },
   ref,
 ) =>
@@ -22,7 +20,6 @@ const SidebarComponent = ({
     collapsed: collapsedContext,
     width: widthContext,
     collapsedWidth: collapsedWidthContext,
-    toggled: toggledContext,
     transitionDuration: transitionDurationContext,
   } 
   = useSidebar()
@@ -37,7 +34,6 @@ const SidebarComponent = ({
     updateSidebarState({
       collapsed: defaultCollapsed,
       transitionDuration,
-      toggled: false,
     })
   }, [defaultCollapsed, transitionDuration, updateSidebarState])
 
@@ -45,16 +41,14 @@ const SidebarComponent = ({
     <StyledSidebar
       ref={ref}
       collapsed={collapsedContext}
-      toggled={toggledContext}
       width={widthContext}
       collapsedWidth={collapsedWidthContext}
       transitionDuration={transitionDurationContext ?? 300}
       className={classNames(
-      'sidebar',
-        { collapsed: collapsedContext, toggled: toggledContext },
+        'sidebar',
+        { collapsed: collapsedContext },
         className,
       )}
-      {...rest}
     >
       {children}
     </StyledSidebar>
