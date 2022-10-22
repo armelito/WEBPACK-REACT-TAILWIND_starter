@@ -4,10 +4,9 @@ import { useSidebar } from '../../hooks/sidebar/useSidebar'
 import { StyledSidebar } from './styled/StyledSidebar'
 
 const SidebarComponent = ({
-    width = '250px',
-    collapsedWidth = '80px',
+    width,
+    collapsedWidth,
     defaultCollapsed = false,
-    className,
     children,
     transitionDuration = 300,
   },
@@ -47,7 +46,6 @@ const SidebarComponent = ({
       className={classNames(
         'sidebar',
         { collapsed: collapsedContext },
-        className,
       )}
     >
       {children}

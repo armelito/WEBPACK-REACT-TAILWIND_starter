@@ -1,11 +1,9 @@
 import React from 'react'
-import classnames from 'classnames'
 import { NavigationContext } from '../../contexts/sidebar/NavigationContext'
 
 const NavigationComponent = (
   { 
     children, 
-    className, 
     closeOnClick = false
   },
   ref,
@@ -30,7 +28,7 @@ const NavigationComponent = (
 
   return (
     <NavigationContext.Provider value={providerValue}>
-      <nav ref={ref} className={classnames('navigation', className)}>
+      <nav ref={ref} className={'navigation'}>
         <ul>{children}</ul>
       </nav>
     </NavigationContext.Provider>
